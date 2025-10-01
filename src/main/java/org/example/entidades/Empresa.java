@@ -11,10 +11,11 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
+@ToString (exclude = "sucursales")
 public class Empresa {
     private String nombre;
     private String razonSocial;
-    private Integer cuit;
+    private Long cuit;
     private String logo;
 
     @Builder.Default
